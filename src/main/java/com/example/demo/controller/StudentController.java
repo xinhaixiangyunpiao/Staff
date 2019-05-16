@@ -21,7 +21,7 @@ public class StudentController {
     @Autowired
     private StudentRepository studentRepository;
 
-    @PostMapping("/add")
+  @PostMapping("/add")
     public Result add(Student student){
         if(student.getId()==null || student == null || student.getName() == null || student.getClass() == null){
             return new Result("空指针");
